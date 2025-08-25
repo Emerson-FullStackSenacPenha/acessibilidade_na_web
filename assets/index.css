@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#conteudo_principal{
+    width: 80%;
+    margin: 0 auto;
+}
+.class{
+    height: 20vh;
+    grid-template-columns: 1fr 2fr;
+}
+
+.class h1{
+    color: #0C95D4;
+}
