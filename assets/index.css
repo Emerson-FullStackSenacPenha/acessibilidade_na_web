@@ -1,57 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Poppins", sans-serif;
-}#conteudo_principal{
+}
+
+#conteudo_principal {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 90px;
 }
-.capitulo{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto;
-    align-items: center;
-    grid-template-rows: 1fr ;
+
+.capitulo {
+    display: flex;
     background-color: #0C95D4;
     border-radius: 10px;
 }
-.artigo_capitulo{
-    padding: 15px 40px 15px 40px;
+
+.artigo_capitulo {
+    padding: 20px 40px;
     color: white;
-}
-.reverse{
-    grid-template-columns: auto 1fr;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.capitulo img{
-    width: 500px;
-    height: 500px;
-    place-items: start;
-    height: 100%;
+#cap_4 .artigo_capitulo {
+    gap: 10px;
 }
-.reverse img{
-    place-self: end;
+
+.capitulo img {
+    max-width: 35%;
 }
-.capitulo h2{
-    color: #0C95D4;
-    font-size: 40px;
+
+.capitulo h2 {
+    font-size: 30px;
     font-weight: 600;
-    padding-bottom: 60px;
     color: white;
 }
-.capitulo p{
+
+.capitulo p {
     font-size: 19px;
     font-weight: 400;
 }
-.capitulo ul{
+
+.capitulo ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -62,5 +64,41 @@ body{
 
 
 @media screen and (max-width: 1250px) {
-    
+
+    .capitulo h2 {
+        font-size: 25px;
+    }
+
+    .capitulo p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .artigo_capitulo {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .capitulo{
+        flex-direction: column;
+        background-color: transparent;
+        align-items: center;
+        gap: 20px;
+    }
+  
+    .capitulo img{
+        max-width: 70%;
+        max-height: 50%;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .capitulo ul{
+        color: white;
+    }
+    .artigo_capitulo{
+        color: white;
+        background-color: #0C95D4;
+    }
 }
