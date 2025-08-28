@@ -153,7 +153,7 @@ table {
 }
 .texto-direita {
     display: flex;
-    align-items: center;
+    align-items: center !important;
     gap: 40px;
 }
 table{
@@ -170,7 +170,7 @@ th {
 }
 
 td {
-    padding: 20px;
+    padding: 10px !important;
     height: auto;
     word-wrap: break-word
 }
