@@ -148,17 +148,21 @@ table {
     justify-content: space-between;
     align-items: center;
 }
-
+.titulo-tabela h3{
+    font-size: 15px;
+}
 .texto-direita {
     display: flex;
     align-items: center;
     gap: 40px;
 }
-
+table{
+    margin-bottom: 50px;
+}
 tr,
 td,
 th {
-    border: 2px solid #b7bdf3;
+    border: 2px solid #b7bdf3 !important;
 }
 
 th {
