@@ -62,13 +62,15 @@ body {
 table{
     background-color: #e5f2fa;
     border-collapse: collapse;
+    width: 100vw;
+    display: flex;
 }
 
 tr, td, th{
     border: 1px solid #b7bdf3;
 }
 th{
-    width: 15px;
+    width: 40px;
 }
 td{
     padding: 20px;
